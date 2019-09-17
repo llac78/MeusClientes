@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:padding="@dimen/layout_margin"
+        android:text="@string/dialogNovoTitulo"
+        android:textColor="@color/colorTextoTitulo"
+        android:textSize="@dimen/dialogTitleFontSize"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextDialogNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:gravity="top"
+        android:hint="@string/hint_nome"
+        android:inputType="textPersonName|text|textCapWords"
+        android:padding="@dimen/activity_margin"
+        android:textColor="@color/colorTexto"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <Switch
+        android:id="@+id/switchPendente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:checked="false"
+        android:text="@string/pendenteForm"
+        android:textColor="@color/colorTexto" />
+</LinearLayout>

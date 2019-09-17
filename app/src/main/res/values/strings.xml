@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Meus Clientes</string>
+    <string name="dialogNovoTitulo">Novo Cliente</string>
+    <string name="dialogEditTitulo">Editar Cliente</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_atualizar">Atualizar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="hint_nome">Nome</string>
+    <string name="toastNome">Um nome deve ser informado</string>
+    <string name="empty_list">Não há clientes cadastrados</string>
+
+
+    <string name="excluir">Excluir</string>
+    <string name="excluirTodos">Excluir Todos os Clientes</string>
+    <string name="tituloOpcao">Escolha uma opção</string>
+    <string name="toastErro">Erro ao carregar a ação</string>
+
+    <string name="pendenteForm">Pagamento pendente</string>
+    <string name="pendenteItem">Pendente</string>
+    <string name="naoPendente">Pago</string>
+
+    <string name="menu_lista_pendentes">Listar Clientes Pendentes</string>
+
+
+
+</resources>

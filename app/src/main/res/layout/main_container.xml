@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerMain">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/textViewEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:paddingTop="@android:dimen/notification_large_icon_height"
+        android:text="@string/empty_list"
+        android:textColor="@android:color/holo_red_dark" />
+
+
+</RelativeLayout>

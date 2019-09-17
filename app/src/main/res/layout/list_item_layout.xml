@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewDataAtual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:fontFamily="sans-serif"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/itemDataFontSize" />
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDataAtual"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingStart="@dimen/layout_margin"
+        android:textColor="@color/colorTexto"
+        android:textSize="@dimen/ListItemFontSize" />
+
+    <TextView
+        android:id="@+id/textViewPendente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_margin"
+        android:layout_marginTop="@dimen/item_margin"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:layout_marginBottom="@dimen/item_margin" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/item_margin"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:background="@color/colorPrimaryDark" />
+</RelativeLayout>
