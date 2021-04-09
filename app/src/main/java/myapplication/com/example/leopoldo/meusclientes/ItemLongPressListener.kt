@@ -10,21 +10,17 @@ class ItemLongPressListener(context: Context, recyclerView: RecyclerView, val li
     : RecyclerView.OnItemTouchListener {
 
     // para identificar o click, se é um simples ou longo
-    private val gestureDetector: GestureDetector
-    init {
-        gestureDetector = GestureDetector(context, object : GestureDetector.SimpleOnGestureListener(){
-            override fun onSingleTapUp(e: MotionEvent?): Boolean {
-                return true
+    private val gestureDetector: GestureDetector = GestureDetector(context, object : GestureDetector.SimpleOnGestureListener(){
+        override fun onSingleTapUp(e: MotionEvent?): Boolean {
+            return true
+        }
+        override fun onLongPress(e: MotionEvent) {
+            val child = recyclerView.findChildViewUnder(e.x, e.y) // buscar o item clicado pelas coordenadas x e y
+            if (child != null && listener != null){
+                listener.onLongClick(child, recyclerView.getChildAdapterPosition(child))
             }
-
-            override fun onLongPress(e: MotionEvent) {
-                val child = recyclerView.findChildViewUnder(e.x, e.y) // buscar o item clicado pelas coordenadas x e y
-                if (child != null && listener != null){
-                    listener.onLongClick(child, recyclerView.getChildAdapterPosition(child))
-                }
-            }
-        })
-    }
+        }
+    })
 
     // para o click simples
     override fun onInterceptTouchEvent(rv: RecyclerView, e: MotionEvent): Boolean {
@@ -32,7 +28,6 @@ class ItemLongPressListener(context: Context, recyclerView: RecyclerView, val li
         if(child != null && listener != null && gestureDetector.onTouchEvent(e)){
             listener.onClick(child, rv.getChildAdapterPosition(child))
         }
-
         return false
     }
 

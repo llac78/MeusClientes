@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:padding="@dimen/layout_margin"
+        android:text="@string/dialogNovoTitulo"
+        android:textColor="@color/colorTextoTitulo"
+        android:textSize="@dimen/dialogTitleFontSize"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextDialogNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:fontFamily="sans-serif-light"
+        android:gravity="top"
+        android:hint="@string/hint_nome"
+        android:inputType="textPersonName|text|textCapWords"
+        android:maxLength="20"
+        android:textColor="@color/colorTexto"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/editTextServicoPrestado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:fontFamily="sans-serif-light"
+        android:gravity="top"
+        android:hint="@string/hint_servicoPrestado"
+        android:inputType="textCapSentences"
+        android:maxLength="30"
+        android:textColor="@color/colorTexto"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/editTextValorServicoPrestado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:backgroundTint="@color/cardview_light_background"
+        android:gravity="center"
+        android:hint="@string/hint_valor"
+        android:inputType="numberDecimal"
+        android:maxLength="20"
+        android:textColor="@color/colorTexto" />
+
+    <Switch
+        android:id="@+id/switchPendente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/switch_margin"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_marginEnd="@dimen/switch_margin"
+        android:checked="false"
+        android:gravity="top"
+        android:text="@string/pendenteForm"
+        android:textColor="@color/colorTexto" />
+
+    <EditText
+        android:id="@+id/edtObservacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:fontFamily="sans-serif-light"
+        android:gravity="top"
+        android:hint="@string/observacoes_opcional"
+        android:inputType="textMultiLine|textCapSentences"
+        android:maxLength="50"
+        android:maxLines="3"
+        android:minLines="2"
+        android:textColor="@color/colorTexto" />
+
+</LinearLayout>

@@ -6,6 +6,7 @@
     <string name="btn_atualizar">Atualizar</string>
     <string name="btn_cancelar">Cancelar</string>
     <string name="hint_nome">Nome</string>
+    <string name="hint_servicoPrestado">Serviço Prestado (ex: aula, frete, etc.)</string>
     <string name="toastNome">Um nome deve ser informado</string>
     <string name="empty_list">Não há clientes cadastrados</string>
 
@@ -20,7 +21,23 @@
     <string name="naoPendente">Pago</string>
 
     <string name="menu_lista_pendentes">Listar Clientes Pendentes</string>
-
+    <string name="atencao">Atenção</string>
+    <string name="confirmacao_excluir_cliente">deseja realmente excluir este cliente?</string>
+    <string name="confirmacao_excluir_todos">deseja realmente excluir todos os clientes? esta ação não poderá ser desfeita e todos os dados serão perdidos!</string>
+    <string name="confirmacao_excluir_item">deseja realmente excluir este cliente? esta ação não poderá ser desfeita e todos os dados serão perdidos!</string>
+    <string name="btn_excluir">Excluir</string>
+    <string name="label_nome">Nome</string>
+    <string name="label_servico_prestado">Serviço prestado</string>
+    <string name="label_pendente">Situação de pagamento</string>
+    <string name="label_observacoes">Observações</string>
+    <string name="label_valor">Valor do Serviço</string>
+    <string name="observacoes_opcional">Observações</string>
+    <string name="hint_valor">R$ 0,00</string>
+    <string name="label_moeda">R$</string>
+    <string name="toast_create">Registro criado com sucesso</string>
+    <string name="toast_update">Atualização efetuada com sucesso</string>
+    <string name="toast_delete_all">Registros excluídos com sucesso</string>
+    <string name="toast_delete">Registro excluído com sucesso</string>
 
 
 </resources>

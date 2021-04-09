@@ -1,53 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:clickable="true"
-    android:foreground="?attr/selectableItemBackground"
-    android:orientation="vertical">
+    android:foreground="?attr/selectableItemBackground">
 
     <TextView
         android:id="@+id/textViewDataAtual"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/layout_margin"
         android:layout_marginTop="@dimen/layout_margin"
         android:layout_marginEnd="@dimen/layout_margin"
-        android:layout_marginBottom="@dimen/layout_margin"
         android:fontFamily="sans-serif"
-        android:textAlignment="textEnd"
+        android:text="data"
         android:textAllCaps="false"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/itemDataFontSize" />
+        android:textColor="@color/colorTexto"
+        android:textSize="@dimen/itemDataFontSize"
+        app:layout_constraintEnd_toEndOf="@id/textViewNome"
+        app:layout_constraintTop_toTopOf="@id/view" />
 
     <TextView
         android:id="@+id/textViewNome"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textViewDataAtual"
         android:layout_marginStart="@dimen/layout_margin"
         android:layout_marginTop="@dimen/layout_margin"
-        android:layout_marginEnd="@dimen/layout_margin"
-        android:layout_marginBottom="@dimen/layout_margin"
         android:fontFamily="sans-serif-smallcaps"
-        android:paddingStart="@dimen/layout_margin"
+        android:text="nome"
         android:textColor="@color/colorTexto"
-        android:textSize="@dimen/ListItemFontSize" />
+        android:textSize="@dimen/ListItemFontSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view" />
+
+    <TextView
+        android:id="@+id/textViewServicoPrestado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:text="servico"
+        android:textColor="@color/colorTexto"
+        android:textSize="@dimen/itemDataFontSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNome" />
+
+    <TextView
+        android:text="cskjdcnksd"
+        android:id="@+id/textViewValorServicoPrestado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/layout_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewServicoPrestado" />
 
     <TextView
         android:id="@+id/textViewPendente"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/item_margin"
-        android:layout_marginTop="@dimen/item_margin"
-        android:layout_marginEnd="@dimen/item_margin"
-        android:layout_marginBottom="@dimen/item_margin" />
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:text="pendente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewValorServicoPrestado" />
 
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="@dimen/item_margin"
-        android:layout_marginBottom="@dimen/layout_margin"
-        android:background="@color/colorPrimaryDark" />
-</RelativeLayout>
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

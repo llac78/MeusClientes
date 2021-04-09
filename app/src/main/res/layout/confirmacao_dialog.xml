@@ -6,38 +6,35 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textViewDialogTitle"
+        android:id="@+id/textViewDialogTitleConfirmation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/layout_margin"
         android:background="@color/colorPrimary"
         android:fontFamily="sans-serif-light"
         android:padding="@dimen/layout_margin"
-        android:text="@string/dialogNovoTitulo"
+        android:gravity="center"
+        android:text="@string/atencao"
         android:textColor="@color/colorTextoTitulo"
         android:textSize="@dimen/dialogTitleFontSize"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextDialogNome"
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/layout_margin"
-        android:ems="10"
-        android:fontFamily="sans-serif-light"
-        android:gravity="top"
-        android:hint="@string/hint_nome"
-        android:inputType="textPersonName|text|textCapWords"
-        android:padding="@dimen/activity_margin"
-        android:textColor="@color/colorTexto"
-        android:textColorHint="@android:color/darker_gray" />
+        android:src="@drawable/ic_warning"
+        android:layout_gravity="center" />
 
-    <Switch
-        android:id="@+id/switchPendente"
+    <TextView
+        android:id="@+id/textViewDialogConfirmation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/layout_margin"
-        android:checked="false"
-        android:text="@string/pendenteForm"
-        android:textColor="@color/colorTexto" />
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:padding="@dimen/layout_margin"
+        android:text="@string/confirmacao_excluir_todos"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
 </LinearLayout>
